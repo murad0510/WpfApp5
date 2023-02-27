@@ -101,5 +101,14 @@
   <ItemGroup>
     <Resource Include="Telegram_Photo\telegram.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Telegram_Photo\circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Telegram_Photo\arrow %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Telegram_Photo\search.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

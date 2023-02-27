@@ -5,11 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp5"
         mc:Ignorable="d"
-        Title="MainWindow" Height="550" Width="1000">
+        Title="MainWindow" Height="550" Width="1000" ResizeMode="NoResize">
     <Grid>
-        <!--<Image Width="40" Height="40" Source="Telegram_Photo/telegram.gif"></Image>-->
-        <Image gif:ImageBehavior.RepeatBehavior="3x"
-       gif:ImageBehavior.AnimatedSource="Telegram_Photo/telegram.gif" />
-        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition/>
+
+            </Grid.RowDefinitions>
+            <Canvas>
+                <Image Canvas.Left="10" Width="40" Height="40" Source="Telegram_Photo/telegram.gif"></Image>
+                <Label Content="Telegram" FontSize="19" FontWeight="ExtraBlack" Canvas.Left="50" Canvas.Bottom="3"></Label>
+                <TextBlock Width="1000" Height="1" Canvas.Bottom="-3" Background="SlateGray"></TextBlock>
+                <Image Canvas.Left="790" Width="40" Height="40" Source="Telegram_Photo/circle.png"></Image>
+                <Label Content="VM" FontSize="20" Canvas.Left="790" Foreground="White"></Label>
+                <Label Content="Vitaly Medvedev" FontSize="15" Canvas.Left="830" Foreground="Black" Canvas.Bottom="6"></Label>
+                <Image Canvas.Left="957" Width="19" Height="27" Source="Telegram_Photo/arrow (1).png" Canvas.Bottom="7"></Image>
+
+                <TextBlock Width="492" Height="1" Canvas.Bottom="-3" Background="SlateGray" Canvas.Left="300">
+                    <TextBlock.RenderTransform>
+                        <RotateTransform Angle="90"></RotateTransform>
+                    </TextBlock.RenderTransform>
+                </TextBlock> 
+                <TextBox Width="300" Height="42" Canvas.Bottom="-45" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ></TextBox>
+                <Image Canvas.Left="14" Width="19" Height="27" Source="Telegram_Photo/search.png" Canvas.Bottom="-38"></Image>
+                <Label Content="Search" Foreground="Gray" Canvas.Bottom="-38" Canvas.Left="45" FontSize="16"></Label>
+                
+            </Canvas>
+            
+        </Grid>
     </Grid>
 </Window>
