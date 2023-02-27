@@ -10,11 +10,11 @@
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="300"/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="300"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="40" />
-                <RowDefinition/>
+                <RowDefinition Height="450"/>
 
             </Grid.RowDefinitions>
             <Canvas>
@@ -62,9 +62,41 @@
                 <Image Canvas.Left="920" Width="19" Height="27" Source="Telegram_Photo/Bin.png" Canvas.Bottom="-38"></Image>
                 <Image Canvas.Left="960" Width="19" Height="27" Source="Telegram_Photo/Parametirs.png" Canvas.Bottom="-38"></Image>
 
-                <Label Content="Resent" Canvas.Top="100" Canvas.Left="20"></Label>
+                <Label Content="Resent" Canvas.Top="100" Canvas.Left="20" FontSize="12"></Label>
+                <Image Canvas.Top="110" Width="100" Canvas.Left="230" Height="27" Source="Telegram_Photo/arrow (1).png" Canvas.Bottom="7">
+                    <Image.RenderTransform>
+                        <ScaleTransform ScaleX="0.5" ScaleY="0.5"></ScaleTransform>
+                    </Image.RenderTransform>
+                </Image>
+
+
+                <!--<Ellipse Height="40" Width="40" Canvas.Left="20" Canvas.Top="300">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="Telegram_Photo/human photo.png"/>
+                    </Ellipse.Fill>
+                </Ellipse>-->
 
             </Canvas>
+
+            <Grid Grid.Row="1" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+                </Grid.RowDefinitions>
+                <Label Content="salam"></Label>
+
+                <!--<Ellipse Height="40" Width="40" Canvas.Left="20" Canvas.Top="160">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="Telegram_Photo/cat photo.png"/>
+                    </Ellipse.Fill>
+                </Ellipse>-->
+            </Grid>
 
         </Grid>
     </Grid>
