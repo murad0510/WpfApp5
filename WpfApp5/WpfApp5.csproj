@@ -110,5 +110,17 @@
   <ItemGroup>
     <Resource Include="Telegram_Photo\search.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Telegram_Photo\car 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Telegram_Photo\Trash Can.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Telegram_Photo\Bin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Telegram_Photo\Parametirs.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
