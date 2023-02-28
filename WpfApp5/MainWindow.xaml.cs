@@ -24,5 +24,15 @@ namespace WpfApp5
         {
             InitializeComponent();
         }
+
+        private void myTextBox_PreviewMouseUp(object sender, MouseButtonEventArgs e)
+        {
+            myTextBox.Text = String.Empty;
+        }
+
+        private void myTextBoxSearch_PreviewMouseUp(object sender, MouseButtonEventArgs e)
+        {
+            myTextBoxSearch.Text = String.Empty;    
+        }
     }
 }

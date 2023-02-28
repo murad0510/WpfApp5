@@ -5,17 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp5"
         mc:Ignorable="d"
-        Title="MainWindow" Height="550" Width="1000" ResizeMode="NoResize">
+        Title="MainWindow" Height="800" Width="1000" ResizeMode="NoResize">
     <Grid>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="300"/>
-                <ColumnDefinition Width="300"/>
+                <ColumnDefinition Width="700"/>
             </Grid.ColumnDefinitions>
+
             <Grid.RowDefinitions>
                 <RowDefinition Height="40" />
-                <RowDefinition Height="450"/>
-
+                <RowDefinition Height="590"/>
             </Grid.RowDefinitions>
             <Canvas>
                 <Image Canvas.Left="10" Width="40" Height="40" Source="Telegram_Photo/telegram.gif"></Image>
@@ -32,7 +32,7 @@
                 <Label Content="Vitaly Medvedev" FontSize="15" Canvas.Left="830" Foreground="Black" Canvas.Bottom="6"></Label>
                 <Image Canvas.Left="957" Width="19" Height="27" Source="Telegram_Photo/arrow (1).png" Canvas.Bottom="7"></Image>
 
-                <TextBlock Width="492" Height="1" Canvas.Bottom="-3" Canvas.Left="300">
+                <TextBlock Width="739" Height="1" Canvas.Bottom="-3" Canvas.Left="300">
                     <TextBlock.RenderTransform>
                         <RotateTransform Angle="90"></RotateTransform>
                     </TextBlock.RenderTransform>
@@ -42,7 +42,7 @@
                         </LinearGradientBrush>
                     </TextBlock.Background>
                 </TextBlock>
-                <TextBox Text="Search" Foreground="Gray" FontSize="16" Width="250" BorderThickness="0" Height="42" Canvas.Bottom="-45" Canvas.Left="48"  HorizontalContentAlignment="Left" VerticalContentAlignment="Center"></TextBox>
+                <TextBox Name="myTextBoxSearch" PreviewMouseUp="myTextBoxSearch_PreviewMouseUp" Text="Search" Foreground="Gray" FontSize="16" Width="250" BorderThickness="0" Height="42" Canvas.Bottom="-45" Canvas.Left="48"  HorizontalContentAlignment="Left" VerticalContentAlignment="Center"></TextBox>
                 <Image Canvas.Left="14" Width="19" Height="27" Source="Telegram_Photo/search.png" Canvas.Bottom="-38"></Image>
                 <TextBlock Width="1000" Height="1" Canvas.Bottom="-50">
                     <TextBlock.Background>
@@ -52,13 +52,13 @@
                     </TextBlock.Background>
                 </TextBlock>
 
-                <Ellipse Height="40" Width="40" Canvas.Left="330" Canvas.Top="46">
+                <Ellipse Height="40" Width="40" Canvas.Left="310" Canvas.Top="46">
                     <Ellipse.Fill>
-                        <ImageBrush ImageSource="Telegram_Photo/car 2.jpg"/>
+                        <ImageBrush ImageSource="Telegram_Photo/human photo.png"/>
                     </Ellipse.Fill>
                 </Ellipse>
 
-                <Label Width="150" Height="30" Content="Boy" Canvas.Top="50" Canvas.Left="380" FontSize="16" Foreground="Gray"></Label>
+                <Label Width="150" Height="30" Content="Brother" Canvas.Top="50" Canvas.Left="380" FontSize="16" Foreground="Gray"></Label>
                 <Image Canvas.Left="920" Width="19" Height="27" Source="Telegram_Photo/Bin.png" Canvas.Bottom="-38"></Image>
                 <Image Canvas.Left="960" Width="19" Height="27" Source="Telegram_Photo/Parametirs.png" Canvas.Bottom="-38"></Image>
 
@@ -69,17 +69,17 @@
                     </Image.RenderTransform>
                 </Image>
 
-
-                <!--<Ellipse Height="40" Width="40" Canvas.Left="20" Canvas.Top="300">
-                    <Ellipse.Fill>
-                        <ImageBrush ImageSource="Telegram_Photo/human photo.png"/>
-                    </Ellipse.Fill>
-                </Ellipse>-->
-
             </Canvas>
 
             <Grid Grid.Row="1" Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="47*"/>
+                    <ColumnDefinition Width="103*"/>
+                </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
                     <RowDefinition/>
                     <RowDefinition/>
                     <RowDefinition/>
@@ -89,14 +89,284 @@
                     <RowDefinition/>
 
                 </Grid.RowDefinitions>
-                <Label Content="salam"></Label>
 
-                <!--<Ellipse Height="40" Width="40" Canvas.Left="20" Canvas.Top="160">
-                    <Ellipse.Fill>
-                        <ImageBrush ImageSource="Telegram_Photo/cat photo.png"/>
-                    </Ellipse.Fill>
-                </Ellipse>-->
+                <Canvas Grid.Row="2" Grid.ColumnSpan="2">
+                    <Ellipse Canvas.Bottom="16" Canvas.Left="20" Height="40" Width="40">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="Telegram_Photo/cat photo.png"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Label Content="Allisla Porshe" Canvas.Left="70" Canvas.Bottom="33" FontWeight="Black"></Label>
+                    <Label Foreground="Gray" Content="Hi,help me pls" Canvas.Left="70" Canvas.Bottom="13"></Label>
+                    <Label Content="01:30 AM" Canvas.Bottom="33" Canvas.Right="10" Foreground="gRAY"></Label>
+                    <Ellipse Canvas.Bottom="16" Canvas.Right="16" Width="15" Height="15" Fill="Red"></Ellipse>
+                    <Label Canvas.Bottom="12" Canvas.Right="15" Content="8" Foreground="White"></Label>
+
+                    <TextBlock Width="263" Height="1" Canvas.Bottom="-60" Canvas.Left="20">
+                        <TextBlock.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#D8D8D8" Offset="0"></GradientStop>
+                            </LinearGradientBrush>
+                        </TextBlock.Background>
+                    </TextBlock>
+
+                    <TextBlock Width="263" Height="1" Canvas.Bottom="-2" Canvas.Left="20">
+                        <TextBlock.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#D8D8D8" Offset="0"></GradientStop>
+                            </LinearGradientBrush>
+                        </TextBlock.Background>
+                    </TextBlock>
+                </Canvas>
+
+                <Canvas Grid.Row="3" Grid.ColumnSpan="2">
+                    <Ellipse Canvas.Bottom="16" Canvas.Left="20" Height="40" Width="40">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="Telegram_Photo/human photo.png"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Label Content="Brother" Canvas.Left="70" Canvas.Bottom="33" FontWeight="Black"></Label>
+                    <Label Foreground="Gray" Content="Typing..." Canvas.Left="70" Canvas.Bottom="13"></Label>
+                    <Label Content="01:30 AM" Canvas.Bottom="33" Canvas.Right="10" Foreground="gRAY"></Label>
+
+                    <TextBlock Width="263" Height="1" Canvas.Bottom="-60" Canvas.Left="20">
+                        <TextBlock.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#D8D8D8" Offset="0"></GradientStop>
+                            </LinearGradientBrush>
+                        </TextBlock.Background>
+                    </TextBlock>
+
+                </Canvas>
+
+                <Canvas Grid.Row="4" Grid.ColumnSpan="2">
+                    <Ellipse Canvas.Bottom="16" Canvas.Left="20" Height="40" Width="40">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="Telegram_Photo/bird photo.png"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Label Content="Michael Hasse" Canvas.Left="70" Canvas.Bottom="33" FontWeight="Black"></Label>
+                    <Label Foreground="Gray" Content="Hi,help me pls" Canvas.Left="70" Canvas.Bottom="13"></Label>
+                    <Label Content="01:30 AM" Canvas.Bottom="33" Canvas.Right="10" Foreground="gRAY"></Label>
+
+                    <TextBlock Width="263" Height="1" Canvas.Bottom="-60" Canvas.Left="20">
+                        <TextBlock.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#D8D8D8" Offset="0"></GradientStop>
+                            </LinearGradientBrush>
+                        </TextBlock.Background>
+                    </TextBlock>
+                </Canvas>
+
+                <Canvas Grid.Row="5" Grid.ColumnSpan="2">
+                    <Ellipse Canvas.Bottom="16" Canvas.Left="20" Height="40" Width="40">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="Telegram_Photo/$.png"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Label Content="Robert De Nilro" Canvas.Left="70" Canvas.Bottom="33" FontWeight="Black"></Label>
+                    <Label Foreground="Gray" Content="I'm happy man what u love it..." Canvas.Left="70" Canvas.Bottom="13"></Label>
+                    <Label Content="01:30 AM" Canvas.Bottom="33" Canvas.Right="10" Foreground="gRAY"></Label>
+
+                    <TextBlock Width="263" Height="1" Canvas.Bottom="-60" Canvas.Left="20">
+                        <TextBlock.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#D8D8D8" Offset="0"></GradientStop>
+                            </LinearGradientBrush>
+                        </TextBlock.Background>
+                    </TextBlock>
+                </Canvas>
+
+
+                <Canvas Grid.Row="6" Grid.ColumnSpan="2">
+                    <Ellipse Canvas.Bottom="16" Canvas.Left="20" Height="40" Width="40">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="Telegram_Photo/cat.png"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Label Content="Alex Tessla" Canvas.Left="70" Canvas.Bottom="33" FontWeight="Black"></Label>
+                    <Label Foreground="Gray" Content="Typing..." Canvas.Left="70" Canvas.Bottom="13"></Label>
+                    <Label Content="01:30 AM" Canvas.Bottom="33" Canvas.Right="10" Foreground="gRAY"></Label>
+                    <Ellipse Canvas.Bottom="16" Canvas.Right="16" Width="15" Height="15" Fill="Red"></Ellipse>
+                    <Label Canvas.Bottom="12" Canvas.Right="15" Content="2" Foreground="White"></Label>
+
+                    <TextBlock Width="263" Height="1" Canvas.Bottom="-60" Canvas.Left="20">
+                        <TextBlock.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#D8D8D8" Offset="0"></GradientStop>
+                            </LinearGradientBrush>
+                        </TextBlock.Background>
+                    </TextBlock>
+                </Canvas>
+
+
+                <Canvas Grid.Row="7" Grid.ColumnSpan="2">
+                    <Ellipse Canvas.Bottom="16" Canvas.Left="13" Height="40" Width="46">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="Telegram_Photo/World.png"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Label Content="Leticla Lower" Canvas.Left="70" Canvas.Bottom="33" FontWeight="Black"></Label>
+                    <Label Foreground="Gray" Content="Of course mate" Canvas.Left="70" Canvas.Bottom="13"></Label>
+                    <Label Content="01:30 AM" Canvas.Bottom="33" Canvas.Right="10" Foreground="gRAY"></Label>
+                </Canvas>
+
+                <Canvas Grid.Row="8" Grid.ColumnSpan="2">
+                    <Ellipse Canvas.Bottom="16" Canvas.Left="13" Height="40" Width="46">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="Telegram_Photo/terrible photo.png"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Label Content="Elena Cooper" Canvas.Left="70" Canvas.Bottom="33" FontWeight="Black"></Label>
+                    <Label Foreground="Gray" Content="Ok , I will be there" Canvas.Left="70" Canvas.Bottom="13"></Label>
+                    <Label Content="01:30 AM" Canvas.Bottom="33" Canvas.Right="10" Foreground="gRAY"></Label>
+                </Canvas>
+
+                <Canvas Grid.Row="9" Grid.ColumnSpan="2">
+                    <Label Canvas.Bottom="20" Content="All contacts"></Label>
+                    <Image Canvas.Right="10" Canvas.Top="15" Width="19" Height="27" Source="Telegram_Photo/Arrow right.png" Canvas.Bottom="-38">
+                        <Image.RenderTransform>
+                            <ScaleTransform ScaleX="0.7" ScaleY="0.7"></ScaleTransform>
+                        </Image.RenderTransform>
+                    </Image>
+
+                    <TextBlock Width="295" Height="1" Canvas.Bottom="-1" Canvas.Left="4">
+                        <TextBlock.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#D8D8D8" Offset="0"></GradientStop>
+                            </LinearGradientBrush>
+                        </TextBlock.Background>
+                    </TextBlock>
+
+                    <TextBlock Width="295" Height="1" Canvas.Bottom="60" Canvas.Left="4">
+                        <TextBlock.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#D8D8D8" Offset="0"></GradientStop>
+                            </LinearGradientBrush>
+                        </TextBlock.Background>
+                    </TextBlock>
+                </Canvas>
             </Grid>
+            <Canvas Grid.Column="1" Grid.Row="1">
+                <Ellipse Canvas.Top="74" Canvas.Left="20" Height="40" Width="40">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="Telegram_Photo/human photo.png"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Rectangle RadiusX="20" RadiusY="20" Fill="SkyBlue" Canvas.Top="90" Width="260" Height="30" Canvas.Left="60"></Rectangle>
+                <Label Content="The person designing is called  a designer" Canvas.Top="90" Canvas.Left="74"></Label>
+                <Label FontSize="10" Content="2 min" Foreground="Gray" Canvas.Top="114" Canvas.Left="50"></Label>
+
+                <Ellipse Canvas.Top="160" Canvas.Left="20" Height="40" Width="40">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="Telegram_Photo/human photo.png"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Rectangle RadiusX="20" RadiusY="20" Fill="SkyBlue" Canvas.Top="150" Width="320" Height="65" Canvas.Left="60"></Rectangle>
+                <TextBlock Canvas.Top="155" Canvas.Left="75">
+                   Which is also a term used for people who work <LineBreak />
+                   professionally in one of the various design areas,usually <LineBreak />
+                   also speciflying which area is beling dealt with concept
+                </TextBlock>
+                <Label FontSize="10" Content="2 min" Foreground="Gray" Canvas.Top="210" Canvas.Left="50"></Label>
+
+                <Image Canvas.Top="240" Canvas.Right="25" Width="40" Height="40" Source="Telegram_Photo/circle.png"></Image>
+                <Label Content="VM" FontSize="20" Canvas.Right="25" Foreground="White" Canvas.Top="240"></Label>
+                <Rectangle RadiusX="20" RadiusY="20" Fill="SkyBlue" Canvas.Top="253" Width="300" Height="30" Canvas.Right="69"></Rectangle>
+                <Label Content="A designer's sequence of activities is called a design" Canvas.Top="253" Canvas.Right="75"></Label>
+                <Label FontSize="10" Content="2 min" Foreground="Gray" Canvas.Top="280" Canvas.Right="60"></Label>
+
+                <Image Canvas.Top="300" Canvas.Right="25" Width="40" Height="40" Source="Telegram_Photo/circle.png"></Image>
+                <Label Content="VM" FontSize="20" Canvas.Right="25" Foreground="White" Canvas.Top="300"></Label>
+                <Rectangle RadiusX="20" RadiusY="20" Fill="SkyBlue" Canvas.Top="313" Width="220" Height="30" Canvas.Right="69"></Rectangle>
+                <Label Content="Design is the creation of a plan or" Canvas.Top="313" Canvas.Right="85"></Label>
+                <Label FontSize="10" Content="2 min" Foreground="Gray" Canvas.Top="340" Canvas.Right="60"></Label>
+
+                <Ellipse Canvas.Top="370" Canvas.Left="20" Height="40" Width="40">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="Telegram_Photo/human photo.png"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Rectangle RadiusX="20" RadiusY="20" Fill="SkyBlue" Canvas.Top="380" Width="240" Height="30" Canvas.Left="60"></Rectangle>
+                <Label Content="Convention for the construction of an" Canvas.Top="380" Canvas.Left="74"></Label>
+                <Label FontSize="10" Content="2 min" Foreground="Gray" Canvas.Top="407" Canvas.Left="50"></Label>
+
+                <Image Canvas.Top="430" Canvas.Right="25" Width="40" Height="40" Source="Telegram_Photo/circle.png"></Image>
+                <Label Content="VM" FontSize="20" Canvas.Right="25" Foreground="White" Canvas.Top="430"></Label>
+                <Rectangle RadiusX="20" RadiusY="20" Fill="SkyBlue" Canvas.Top="439" Width="110" Height="30" Canvas.Right="69"></Rectangle>
+                <Label Content="Architectural" Canvas.Top="439" Canvas.Right="85"></Label>
+                <Label FontSize="10" Content="1 min" Foreground="Gray" Canvas.Top="466" Canvas.Right="60"></Label>
+
+                <Ellipse Canvas.Top="480" Canvas.Left="20" Height="40" Width="40">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="Telegram_Photo/human photo.png"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Rectangle RadiusX="20" RadiusY="20" Fill="SkyBlue" Canvas.Top="470" Width="320" Height="50" Canvas.Left="60"></Rectangle>
+                <TextBlock Canvas.Top="475" Canvas.Left="80">
+                   Business processes , cifcuit diagrams and sewing.<LineBreak/>
+                   Design has defferent connotations in different fields.
+                </TextBlock>
+                <Label FontSize="10" Content="2 min" Foreground="Gray" Canvas.Top="515" Canvas.Left="50"></Label>
+
+                <Image Canvas.Top="520" Canvas.Right="25" Width="40" Height="40" Source="Telegram_Photo/circle.png"></Image>
+                <Label Content="VM" FontSize="20" Canvas.Right="25" Foreground="White" Canvas.Top="520"></Label>
+                <Rectangle RadiusX="20" RadiusY="20" Fill="SkyBlue" Canvas.Top="530" Width="300" Height="30" Canvas.Right="69"></Rectangle>
+                <Label Content="In some cases the direct construction of an object" Canvas.Top="530" Canvas.Right="85"></Label>
+                <Label FontSize="10" Content="1 min" Foreground="Gray" Canvas.Top="560" Canvas.Right="60"></Label>
+
+                <Ellipse Canvas.Top="580" Canvas.Left="20" Height="40" Width="40">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="Telegram_Photo/human photo.png"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Rectangle RadiusX="20" RadiusY="20" Fill="SkyBlue" Canvas.Top="595" Width="70" Height="30" Canvas.Left="60"></Rectangle>
+                <Label Content=". . ." Canvas.Top="565" Canvas.Left="66" FontSize="40"></Label>
+                <Label FontSize="10" Content="Typing..." Foreground="Gray" Canvas.Top="619" Canvas.Left="50"></Label>
+            </Canvas>
+
+            <Canvas>
+                <TextBlock Width="700" Height="1" Canvas.Bottom="-680" Canvas.Left="300">
+                    <TextBlock.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#D8D8D8" Offset="0"></GradientStop>
+                        </LinearGradientBrush>
+                    </TextBlock.Background>
+                </TextBlock>
+
+                <TextBlock Background="FloralWhite" Canvas.Bottom="-722" Width="700" Height="70" Canvas.Left="300"></TextBlock>
+
+                <Ellipse Width="30" Height="30" Canvas.Bottom="-704" Canvas.Left="320" Fill="DarkGray"></Ellipse>
+                <Image Canvas.Right="10" Canvas.Bottom="-703" Canvas.Left="328" Width="19" Height="27" Source="Telegram_Photo/hourglass.png">
+                    <Image.RenderTransform>
+                        <ScaleTransform ScaleX="0.7" ScaleY="0.7"></ScaleTransform>
+                    </Image.RenderTransform>
+                </Image>
+
+                <Ellipse Width="30" Height="30" Canvas.Bottom="-704" Canvas.Left="360" Fill="DarkGray"></Ellipse>
+                <Image Canvas.Right="10" Canvas.Bottom="-703" Canvas.Left="368" Width="19" Height="27" Source="Telegram_Photo/Happy.png">
+                    <Image.RenderTransform>
+                        <ScaleTransform ScaleX="0.7" ScaleY="0.7"></ScaleTransform>
+                    </Image.RenderTransform>
+                </Image>
+
+                <TextBox Name="myTextBox" PreviewMouseUp="myTextBox_PreviewMouseUp" Foreground="Gray" Text="Type your message..." Background="FloralWhite" Width="500" Height="70" Canvas.Bottom="-722" Canvas.Left="400"  HorizontalContentAlignment="Left" VerticalContentAlignment="Center"></TextBox>
+
+                <Button Canvas.Bottom="-722" Width="100" Height="70" Canvas.Left="900"></Button>
+
+                <Image Canvas.Right="10" Canvas.Bottom="-690" Canvas.Left="930" Width="19" Height="27" Source="Telegram_Photo/send message photo 80x80.png">
+                    <Image.RenderTransform>
+                        <ScaleTransform ScaleX="2" ScaleY="2"></ScaleTransform>
+                    </Image.RenderTransform>
+                </Image>
+
+                <TextBlock Canvas.Bottom="-179" Background="Blue" Canvas.Left="300" Width="60" Height="1">
+                    <TextBlock.RenderTransform>
+                        <RotateTransform Angle="90"></RotateTransform>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+
+            </Canvas>
 
         </Grid>
     </Grid>

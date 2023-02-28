@@ -134,5 +134,38 @@
   <ItemGroup>
     <Resource Include="Telegram_Photo\human picture.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Telegram_Photo\bird photo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Telegram_Photo\%24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Telegram_Photo\cat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Telegram_Photo\World.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Telegram_Photo\Empty profil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Telegram_Photo\terrible photo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Telegram_Photo\Arrow right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Telegram_Photo\hourglass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Telegram_Photo\Happy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Telegram_Photo\send message photo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Telegram_Photo\send message photo 80x80.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
